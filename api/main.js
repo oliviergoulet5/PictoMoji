@@ -1,8 +1,8 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import morgan from 'morgan';
-import multer from 'multer';
-import crypto from 'crypto';
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const multer = require('multer');
+const crypto = require('crypto');
 
 const HTTP_PORT = process.env.HTTP_PORT || 8080;
 
@@ -20,6 +20,8 @@ const storage = multer.diskStorage({
         });
     }
 });
+
+const upload = multer({ storage: storage });
 
 app.post('/', upload.single('img'), (req, res) => {
     if (!req.file) {

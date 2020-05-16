@@ -1,0 +1,36 @@
+{
+  "name": "pictomoji",
+  "version": "1.0.0",
+  "description": "Summarizes images using a string of emoji.",
+  "main": "api/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zthaver/Imoji.git"
+  },
+  "keywords": [
+    "emoji",
+    "ai",
+    "images",
+    "gcp"
+  ],
+  "author": "Olivier Goulet, Zain Thaver, Yu Chen Zhao, Kalpen Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zthaver/Imoji/issues"
+  },
+  "homepage": "https://github.com/zthaver/Imoji#readme"
+}
